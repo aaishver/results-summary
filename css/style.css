@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{    
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    padding-top: 10rem;
+}
+main{
+    border-radius: 25px;
+    box-shadow: 5px 15px 20px 10px hsl(221, 100%, 96%);
+    display: flex;
+    height: max-content;
+    width: 560px;
+}
+.coin-side{
+    flex: 1;
+}
+
+/* -------result div css section----------- */
+
+.result-section{
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    background:  hsl(241, 81%, 54%);
+    background: -webkit-linear-gradient(top, hsl(252, 100%, 67%)0%, hsl(241, 81%, 54%) 50%);
+}
+.result-head{
+    margin: 2rem 0;
+    color: hsl(241, 100%, 89%);
+}
+.circle{
+    background-color: hsla(241, 72%, 46%, 0);
+    background: -webkit-linear-gradient(top, hsla(256, 72%, 46%, 1)0%, hsla(241, 72%, 46%, 0)100%);
+    border-radius: 50%;
+    margin: 0 25%;
+    padding: 10% 5%;
+}
+.circle p{
+    color: hsl(241, 100%, 89%);
+}
+h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+h2{
+    margin-bottom: 1rem;
+}
+.result-appriciate{
+    margin: 1rem  2rem 2rem;
+}
+.result-appriciate p{
+    color: hsl(241, 100%, 89%);
+}
+
+
+/* -------------summary css section----------- */
+
+.summary-section{
+    border-radius: 0 25px 25px 0;
+    background-color: #fff;
+}
+.summary{
+    margin: 1rem 1.5rem;
+    color: hsl(224, 30%, 27%);
+}
+.icon-div{
+    display: flex;
+}
+.testsub{
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    margin: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-name1{
+    color: hsl(0, 100%, 67%);
+}
+.sub-name2{
+    color: hsl(39, 100%, 56%);
+}
+.sub-name3{
+    color:hsl(166, 100%, 37%) ;
+}
+.sub-name4{
+    color: hsl(234, 85%, 45%);
+}
+.marks{
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+.mark1{
+    background-color:hsla(0, 100%, 92%, 0.3) ;
+}
+.mark2{
+    background-color: hsla(39, 100%, 92%,0.3);
+}
+.mark3{
+    background-color: hsla(166, 100%, 92%,0.3);
+}
+.mark4{
+    background-color:hsla(234, 85%, 92%,0.3) ;
+}
+
+/* -----------continue button css section---------- */
+
+button {
+    cursor: pointer;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border-style: none;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: hsl(224, 30%, 27%);
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 10px 27%;
+    text-decoration: none;
+}
+button:hover {
+    background: hsl(241, 81%, 54%);
+    background-image: -webkit-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-decoration: none;
+}
+
+
+
+/* -----------------media queries css section------------ */
+
+@media (max-width:500px){
+    body{
+        padding-top: 0;
+    }
+    main{
+        flex-direction: column;
+    }
+    .result-section{
+        border-radius: 0 0 25px 25px;
+    }
+    .circle{
+        margin: 0 28%;
+        padding: 12% 0;
+    }
+    button{
+        padding: 10px 33%;
+    }
+    
+}
+
+@media (max-width:340px){
+    .circle{
+        margin: 0 27%;
+        padding: 10% 0;
+    }
+    button{
+        padding: 10px 28%;
+    }
+}
+
+@media (max-width:300px){
+    .circle{
+        margin: 0 25%;
+        padding: 8% 2%;
+    }
+    button{
+        padding: 10px 25%;
+    }
+}
